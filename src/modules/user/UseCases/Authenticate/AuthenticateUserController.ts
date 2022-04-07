@@ -5,6 +5,8 @@ class AuthenticateUserController {
   async handle(request: Request, response: Response): Promise<Response> {
     const { email, password } = request.body;
 
+    console.log(email, password)
+
     const authenticateUserController = new AuthenticateUserService();
 
     const token = await authenticateUserController.execute({ email, password });

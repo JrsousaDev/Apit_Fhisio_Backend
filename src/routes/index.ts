@@ -8,9 +8,7 @@ import { auth } from "../middlewares/auth";
 const routes = Router();
 
 routes.use('/user', userRoutes)
-
 routes.use(auth);
-
 routes.use('/enterprise', enterpriseRoutes);
 routes.use('/patient', patientRoutes);
 routes.use('/matriculation', matriculationRoutes);
