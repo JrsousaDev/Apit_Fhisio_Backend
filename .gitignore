@@ -1,0 +1,9 @@
+.idea/
+.vscode/
+node_modules/
+build/
+temp/
+dist/
+.env
+.env.local
+ormconfig.json
